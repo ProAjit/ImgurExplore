@@ -19,54 +19,28 @@ struct ImageListModel: Codable {
 
 struct ImageListData: Codable {
     let id, title: String
-    let description: JSONNull?
+    let description: String?
     let datetime: Int
-    let cover: String
-    let coverWidth, coverHeight: Int
-    let accountURL: String
-    let accountID: Int
-    let privacy, layout: String
+    let privacy : String?
+    let layout: String?
     let views: Int
     let link: String
     let ups, downs, points, score: Int
-    let isAlbum: Bool
     let vote: JSONNull?
     let favorite, nsfw: Bool
     let section: String
-    let commentCount, favoriteCount: Int
     let topic, topicID: JSONNull?
-    let imagesCount: Int
-    let inGallery, isAd: Bool
     let tags: [JSONAny]
-    let adType: Int
-    let adURL: String
-    let inMostViral, includeAlbumAds: Bool
-    let images: [Image]
-    let adConfig: AdConfig
+    let images: [Image]?
 
     enum CodingKeys: String, CodingKey {
-        case id, title, description, datetime, cover
-        case coverWidth = "cover_width"
-        case coverHeight = "cover_height"
-        case accountURL = "account_url"
-        case accountID = "account_id"
+        case id, title, description, datetime
         case privacy, layout, views, link, ups, downs, points, score
-        case isAlbum = "is_album"
         case vote, favorite, nsfw, section
-        case commentCount = "comment_count"
-        case favoriteCount = "favorite_count"
         case topic
         case topicID = "topic_id"
-        case imagesCount = "images_count"
-        case inGallery = "in_gallery"
-        case isAd = "is_ad"
         case tags
-        case adType = "ad_type"
-        case adURL = "ad_url"
-        case inMostViral = "in_most_viral"
-        case includeAlbumAds = "include_album_ads"
         case images
-        case adConfig = "ad_config"
     }
 }
 
@@ -102,7 +76,7 @@ struct AdConfig: Codable {
 
 struct Image: Codable {
     let id: String
-    let title, description: JSONNull?
+    let title: JSONNull?
     let datetime: Int
     let type: String
     let animated: Bool
@@ -111,30 +85,20 @@ struct Image: Codable {
     let vote: JSONNull?
     let favorite: Bool
     let nsfw, section, accountURL, accountID: JSONNull?
-    let isAd, inMostViral, hasSound: Bool
     let tags: [JSONAny]
-    let adType: Int
-    let adURL, edited: String
-    let inGallery: Bool
+    let edited: String
     let link: String
-    let commentCount, favoriteCount, ups, downs: JSONNull?
+    let commentCount, ups, downs: JSONNull?
     let points, score: JSONNull?
 
     enum CodingKeys: String, CodingKey {
-        case id, title, description, datetime, type, animated, width, height, size, views, bandwidth, vote, favorite, nsfw, section
+        case id, title, datetime, type, animated, width, height, size, views, bandwidth, vote, favorite, nsfw, section
         case accountURL = "account_url"
         case accountID = "account_id"
-        case isAd = "is_ad"
-        case inMostViral = "in_most_viral"
-        case hasSound = "has_sound"
         case tags
-        case adType = "ad_type"
-        case adURL = "ad_url"
         case edited
-        case inGallery = "in_gallery"
         case link
         case commentCount = "comment_count"
-        case favoriteCount = "favorite_count"
         case ups, downs, points, score
     }
 }

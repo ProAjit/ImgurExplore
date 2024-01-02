@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8742195D-1E3A-4D82-980B-3998E80991D3"
+            uuid = "FD2F6042-A996-4255-990C-9B983C8FAA5B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImgurExplore/View/ViewController.swift"
+            filePath = "ImgurExplore/ViewModel/ImageListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "callImgurImageListAPI()"
             landmarkType = "7">
          </BreakpointContent>

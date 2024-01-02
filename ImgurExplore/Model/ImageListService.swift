@@ -18,20 +18,21 @@ final class ImageListService {
         
         var request = URLRequest(url: url)
         request.httpMethod = APIMethod.get
-        request.setValue("Authorization", forHTTPHeaderField: ImgurKeys.client_id)
+        request.addValue(ImgurKeys.client_id, forHTTPHeaderField: "Authorization")
         
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (jsonData, response) = try await URLSession.shared.data(for: request)
         
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
             throw UserError.invalidResponse
         }
-    
-        let networkLog = OSLog(subsystem: "com.ImgurExplore", category: "Network")
-        os_log("HTTP response: %@", log: networkLog, response.statusCode)
-
         do {
             let decoder = JSONDecoder()
-            return try decoder.decode(ImageListModel.self, from: data)
+            let decodeAndPrint = { 
+                print(try! decoder.decode(ImageListModel.self, from: jsonData))
+            }
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            decodeAndPrint()
+            return try decoder.decode(ImageListModel.self, from: jsonData)
         } catch {
             throw UserError.invalidData
         }
