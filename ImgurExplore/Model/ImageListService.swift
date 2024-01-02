@@ -27,11 +27,7 @@ final class ImageListService {
         }
         do {
             let decoder = JSONDecoder()
-            let decodeAndPrint = { 
-                print(try! decoder.decode(ImageListModel.self, from: jsonData))
-            }
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            decodeAndPrint()
             return try decoder.decode(ImageListModel.self, from: jsonData)
         } catch {
             throw UserError.invalidData
