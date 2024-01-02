@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C88D4BC7-CF38-461C-8240-1FF8D13ADB86"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8742195D-1E3A-4D82-980B-3998E80991D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurExplore/View/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "callImgurImageListAPI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3087EE7D-3DA9-4EA4-8BBD-CC9FA9CAF399"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurExplore/Model/ImageListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getImageListModelData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3087EE7D-3DA9-4EA4-8BBD-CC9FA9CAF399 - ec28e7311b39dd62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for static ImgurExplore.ImageListService.getImageListModelData() async throws -&gt; ImgurExplore.ImageListModel"
+                  moduleName = "ImgurExplore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajitsatarkar/Documents/SwiftUI_Git/ImgurExplore/ImgurExplore/Model/ImageListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "3087EE7D-3DA9-4EA4-8BBD-CC9FA9CAF399 - a8b252c39a57c192"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for static ImgurExplore.ImageListService.getImageListModelData() async throws -&gt; ImgurExplore.ImageListModel"
+                  moduleName = "ImgurExplore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajitsatarkar/Documents/SwiftUI_Git/ImgurExplore/ImgurExplore/Model/ImageListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "3087EE7D-3DA9-4EA4-8BBD-CC9FA9CAF399 - 9b3de72d51197c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for static ImgurExplore.ImageListService.getImageListModelData() async throws -&gt; ImgurExplore.ImageListModel"
+                  moduleName = "ImgurExplore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajitsatarkar/Documents/SwiftUI_Git/ImgurExplore/ImgurExplore/Model/ImageListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "3087EE7D-3DA9-4EA4-8BBD-CC9FA9CAF399 - 92d568c23844fb7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for static ImgurExplore.ImageListService.getImageListModelData() async throws -&gt; ImgurExplore.ImageListModel"
+                  moduleName = "ImgurExplore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajitsatarkar/Documents/SwiftUI_Git/ImgurExplore/ImgurExplore/Model/ImageListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
