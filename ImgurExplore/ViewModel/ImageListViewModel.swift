@@ -15,7 +15,7 @@ protocol ImageListProtocol: AnyObject {
 
 final class ImageListViewModel {
     
-    private(set) var imgurImageListData : ImageListModel?
+    var imgurImageListData : ImageListModel?
     private(set) var userError: UserError?
     weak var delegate : ImageListProtocol!
     

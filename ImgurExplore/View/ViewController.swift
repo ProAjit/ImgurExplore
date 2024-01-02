@@ -43,6 +43,7 @@ extension ViewController: ImageListProtocol {
     
     func returnData(imgurImageListData : ImageListModel?) {
         // Hide the user’s age.
+        imgurListViewModel.imgurImageListData = imgurImageListData
         Logger().info("Images: \(imgurImageListData.debugDescription, privacy: .private)")
         DispatchQueue.main.async {
             self.tableView.reloadData()
