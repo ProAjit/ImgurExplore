@@ -56,9 +56,7 @@ extension ViewController: ImageListProtocol {
 
 }
 
-//MARK: - TableViewDelegate
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let modelData = imgurListViewModel.imgurImageListData?.data else {
@@ -72,10 +70,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         //get cell type
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.backgroundColor = .white
-        cell.textLabel?.text = imgurListViewModel.imgurImageListData?.data[indexPath.row].title
+        cell.textLabel?.text = imgurListViewModel.imgurImageListData?.data[indexPath.row].link
         cell.textLabel?.textColor = .black
+
         return cell
     }
     
+    
+}
+
+//MARK: - TableViewDelegate
+
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
     
 }
