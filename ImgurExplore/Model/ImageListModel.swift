@@ -44,34 +44,6 @@ struct ImageListData: Codable {
     }
 }
 
-// MARK: - AdConfig
-
-struct AdConfig: Codable {
-    let safeFlags: [String]
-    let highRiskFlags: [JSONAny]
-    let unsafeFlags: [String]
-    let wallUnsafeFlags: [JSONAny]
-    let showsAds: Bool
-    let showAdLevel: Int
-    let adConfigSafeFlags: [String]
-    let adConfigHighRiskFlags: [JSONAny]
-    let adConfigUnsafeFlags: [String]
-    let adConfigWallUnsafeFlags: [JSONAny]
-    let showAds: Bool
-    let adConfigShowAdLevel, nsfwScore: Int
-
-    enum CodingKeys: String, CodingKey {
-        case safeFlags, highRiskFlags, unsafeFlags, wallUnsafeFlags, showsAds, showAdLevel
-        case adConfigSafeFlags = "safe_flags"
-        case adConfigHighRiskFlags = "high_risk_flags"
-        case adConfigUnsafeFlags = "unsafe_flags"
-        case adConfigWallUnsafeFlags = "wall_unsafe_flags"
-        case showAds = "show_ads"
-        case adConfigShowAdLevel = "show_ad_level"
-        case nsfwScore = "nsfw_score"
-    }
-}
-
 // MARK: - Image
 
 struct Image: Codable {
