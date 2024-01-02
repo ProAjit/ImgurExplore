@@ -17,8 +17,8 @@ final class ImageListService {
         }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.setValue("Authorization", forHTTPHeaderField: "Client-ID 57c4393ec7ec2b1")
+        request.httpMethod = APIMethod.get
+        request.setValue("Authorization", forHTTPHeaderField: ImgurKeys.client_id)
         
         let (data, response) = try await URLSession.shared.data(for: request)
         
