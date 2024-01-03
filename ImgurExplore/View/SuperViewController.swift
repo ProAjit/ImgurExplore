@@ -8,14 +8,11 @@
 import UIKit
 
 class SuperViewController: UIViewController {
-    
     var loadingIndicator : UIActivityIndicatorView? = nil
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
 }
 
 extension SuperViewController {

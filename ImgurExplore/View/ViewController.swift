@@ -31,10 +31,10 @@ class ViewController: SuperViewController {
     }
     
     private func setUpTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
     }
     
     //MARK: - deinit

@@ -31,15 +31,11 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //get cell type
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .white
-        let images: [AccountImagesData] = Dependencies.accountImageViewModel.getImages()
-        cell.textLabel?.text = images[indexPath.row].title
-        cell.textLabel?.textColor = .black
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
+        // Configure the cell with your data
+        cell.configure(index: indexPath.row)
         return cell
     }
-    
     
 }
 
@@ -48,7 +44,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 200
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -23,6 +23,9 @@
 		B5109EF02B45AAF300F65326 /* ImgurImagesDataHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */; };
 		B5109EF22B45AC0900F65326 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EF12B45AC0900F65326 /* ViewExtension.swift */; };
 		B5109EF42B45B89700F65326 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EF32B45B89700F65326 /* SuperViewController.swift */; };
+		B5109EFA2B45C8AC00F65326 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EF92B45C8AC00F65326 /* CustomTableViewCell.swift */; };
+		B5109EFD2B45CDE700F65326 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B5109EFC2B45CDE700F65326 /* SDWebImage */; };
+		B5109EFF2B45CDE700F65326 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B5109EFE2B45CDE700F65326 /* SDWebImageMapKit */; };
 		B5F327BE2B441D8400D3F2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */; };
 		B5F327C02B441D8400D3F2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */; };
 		B5F327C22B441D8400D3F2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327C12B441D8400D3F2F8 /* ViewController.swift */; };
@@ -69,6 +72,7 @@
 		B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImagesDataHttpService.swift; sourceTree = "<group>"; };
 		B5109EF12B45AC0900F65326 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		B5109EF32B45B89700F65326 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		B5109EF92B45C8AC00F65326 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		B5F327BA2B441D8400D3F2F8 /* ImgurExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5109EFF2B45CDE700F65326 /* SDWebImageMapKit in Frameworks */,
+				B5109EFD2B45CDE700F65326 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +148,14 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
+		B5109EF82B45C74500F65326 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B5109EF92B45C8AC00F65326 /* CustomTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		B5F327B12B441D8400D3F2F8 = {
 			isa = PBXGroup;
 			children = (
@@ -168,16 +182,17 @@
 				B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */,
 				B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */,
 				B5F327F62B441EF900D3F2F8 /* AppConstants.swift */,
+				B5109EF82B45C74500F65326 /* TableViewCells */,
 				B5109ED02B4552D200F65326 /* Dependencies */,
 				B5109ECE2B4550DB00F65326 /* Service */,
 				B5F327F52B441E9A00D3F2F8 /* Model */,
 				B5F327ED2B441E3C00D3F2F8 /* View */,
 				B5F327F42B441E8A00D3F2F8 /* ViewModel */,
-				B5109EBF2B4502D700F65326 /* MockJSONs */,
 				B5F327FC2B446C5F00D3F2F8 /* Logger */,
 				B5F327C32B441D8400D3F2F8 /* Main.storyboard */,
 				B5F327C62B441D8700D3F2F8 /* Assets.xcassets */,
 				B5F327C82B441D8700D3F2F8 /* LaunchScreen.storyboard */,
+				B5109EBF2B4502D700F65326 /* MockJSONs */,
 				B5F327CB2B441D8700D3F2F8 /* Info.plist */,
 			);
 			path = ImgurExplore;
@@ -250,6 +265,10 @@
 			dependencies = (
 			);
 			name = ImgurExplore;
+			packageProductDependencies = (
+				B5109EFC2B45CDE700F65326 /* SDWebImage */,
+				B5109EFE2B45CDE700F65326 /* SDWebImageMapKit */,
+			);
 			productName = ImgurExplore;
 			productReference = B5F327BA2B441D8400D3F2F8 /* ImgurExplore.app */;
 			productType = "com.apple.product-type.application";
@@ -322,6 +341,9 @@
 				Base,
 			);
 			mainGroup = B5F327B12B441D8400D3F2F8;
+			packageReferences = (
+				B5109EFB2B45CDE700F65326 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = B5F327BB2B441D8400D3F2F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +394,7 @@
 				B5F327C22B441D8400D3F2F8 /* ViewController.swift in Sources */,
 				B5109EEC2B45AABB00F65326 /* JsonDataParser.swift in Sources */,
 				B5109EE22B45A8C100F65326 /* DataParser.swift in Sources */,
+				B5109EFA2B45C8AC00F65326 /* CustomTableViewCell.swift in Sources */,
 				B5109EE82B45AA4100F65326 /* ImgurAPIEndPoint.swift in Sources */,
 				B5109EBE2B4501A700F65326 /* AccountImagesModel.swift in Sources */,
 				B5109EEE2B45AAD700F65326 /* HttpServiceImpl.swift in Sources */,
@@ -737,6 +760,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5109EFB2B45CDE700F65326 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5109EFC2B45CDE700F65326 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5109EFB2B45CDE700F65326 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B5109EFE2B45CDE700F65326 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5109EFB2B45CDE700F65326 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5F327B22B441D8400D3F2F8 /* Project object */;
 }
