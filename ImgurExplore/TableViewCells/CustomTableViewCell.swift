@@ -105,16 +105,12 @@ class CustomTableViewCell: UITableViewCell {
             activityIndicator.centerYAnchor.constraint(equalTo: customImageView.centerYAnchor)
         ])
         activityIndicator.startAnimating()
-        // Load and set the actual image asynchronously
-//        if let imageURL = URL(string: images[index].link) {
-//            downloadImage(from: imageURL)
-//        }
         
         // Load and set the actual image asynchronously
         if let imageURL = URL(string: images[index].link) {
-            customImageView.sd_setImage(with: imageURL, completed: { _,_,_,_ in
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.removeFromSuperview()
+            customImageView.sd_setImage(with: imageURL, completed: { [weak self] _,_,_,_ in
+                self?.activityIndicator.stopAnimating()
+                self?.activityIndicator.removeFromSuperview()
             })
         }
         
@@ -128,20 +124,30 @@ class CustomTableViewCell: UITableViewCell {
         return dateFormatter.string(from: inputDate)
     }
     
-//    private func downloadImage(from url: URL) {
-//        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
-//            guard let data = data, error == nil else {
-//                // Handle the error, set a default image, or handle as needed
-//                return
-//            }
-//            DispatchQueue.main.async {
-//                // Set the downloaded image to the UIImageView
-//                self?.customImageView.image = UIImage(data: data)
-//                // Stop the activity indicator once the image is loaded
-//                self?.activityIndicator.stopAnimating()
-//                self?.activityIndicator.removeFromSuperview()
-//            }
-//        }.resume()
-//    }
-    
 }
+
+/* For reference this code is kept intentionally here.
+ It will work if we don't want to use SDWebImage dependancy to download images, but SDWebImage will help in caching as well.
+ 
+ // Load and set the actual image asynchronously
+ //        if let imageURL = URL(string: images[index].link) {
+ //            downloadImage(from: imageURL)
+ //        }
+     
+ //    private func downloadImage(from url: URL) {
+ //        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+ //            guard let data = data, error == nil else {
+ //                // Handle the error, set a default image, or handle as needed
+ //                return
+ //            }
+ //            DispatchQueue.main.async {
+ //                // Set the downloaded image to the UIImageView
+ //                self?.customImageView.image = UIImage(data: data)
+ //                // Stop the activity indicator once the image is loaded
+ //                self?.activityIndicator.stopAnimating()
+ //                self?.activityIndicator.removeFromSuperview()
+ //            }
+ //        }.resume()
+ //    }
+     
+ */
