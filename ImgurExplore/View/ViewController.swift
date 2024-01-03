@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import OSLog
 
-class ViewController: UIViewController {
+class ViewController: SuperViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,13 +15,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUpNavBar()
+        self.setUpTableView()
+        // Do any additional setup after loading the view.
+        self.getImgurAccountImages()
+    }
+    
+    private func setUpNavBar() {
         title = "Imgur List"
+        if #available(iOS 13.0, *) {
+            navigationController?.navigationBar.standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        } else {
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        }
+    }
+    
+    private func setUpTableView() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
-        // Do any additional setup after loading the view.
-        self.getImgurAccountImages()
     }
     
     //MARK: - deinit

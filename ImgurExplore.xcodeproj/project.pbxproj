@@ -23,6 +23,7 @@
 		B5109EEE2B45AAD700F65326 /* HttpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EED2B45AAD700F65326 /* HttpServiceImpl.swift */; };
 		B5109EF02B45AAF300F65326 /* ImgurImagesDataHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */; };
 		B5109EF22B45AC0900F65326 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EF12B45AC0900F65326 /* ViewExtension.swift */; };
+		B5109EF42B45B89700F65326 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EF32B45B89700F65326 /* SuperViewController.swift */; };
 		B5F327BE2B441D8400D3F2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */; };
 		B5F327C02B441D8400D3F2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */; };
 		B5F327C22B441D8400D3F2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327C12B441D8400D3F2F8 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		B5109EED2B45AAD700F65326 /* HttpServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceImpl.swift; sourceTree = "<group>"; };
 		B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImagesDataHttpService.swift; sourceTree = "<group>"; };
 		B5109EF12B45AC0900F65326 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		B5109EF32B45B89700F65326 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		B5F327BA2B441D8400D3F2F8 /* ImgurExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				B5F327C12B441D8400D3F2F8 /* ViewController.swift */,
 				B5109EF12B45AC0900F65326 /* ViewExtension.swift */,
+				B5109EF32B45B89700F65326 /* SuperViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				B5109EEE2B45AAD700F65326 /* HttpServiceImpl.swift in Sources */,
 				B5109EE62B45A9CF00F65326 /* HttpService.swift in Sources */,
 				B5F327BE2B441D8400D3F2F8 /* AppDelegate.swift in Sources */,
+				B5109EF42B45B89700F65326 /* SuperViewController.swift in Sources */,
 				B5109EEA2B45AA8000F65326 /* ImgurImagesDataHttpServiceImpl.swift in Sources */,
 				B5F327F72B441EF900D3F2F8 /* AppConstants.swift in Sources */,
 				B5109EE42B45A94600F65326 /* EndPointType.swift in Sources */,

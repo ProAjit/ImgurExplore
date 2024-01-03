@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum ImgurAPIEndPoint {
     case getListOfImages
 }

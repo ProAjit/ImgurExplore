@@ -11,9 +11,12 @@ import UIKit
 extension ViewController {
             
     func getImgurAccountImages() {
+        self.LoadingStart()
         Task {
             let _ = await Dependencies.accountImageViewModel.getImgurAccountImagesData()
+            self.tableView.isHidden = false
             self.tableView.reloadData()
+            self.LoadingStop()
         }
     }
     
@@ -46,6 +49,10 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
     }
     
 }

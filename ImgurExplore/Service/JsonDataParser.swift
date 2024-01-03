@@ -8,6 +8,7 @@
 import Foundation
 
 class JsonDataParser<T: Codable> {
+    
     class func parseData(data: Data) -> T? {
         let decoder = JSONDecoder()
         do {
@@ -16,8 +17,7 @@ class JsonDataParser<T: Codable> {
         } catch  {
             print("Decoding Error \(error)")
         }
-        //guard let parsedData = try? decoder.decode(T.self, from: data) else { return nil }
-        //return parsedData
         return nil
     }
+    
 }
