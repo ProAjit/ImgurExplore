@@ -12,8 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var imgurListViewModel = ImageListViewModel()
-        
+    //var imgurListViewModel = ImageListViewModel()
+    var accountImagesViewModel = AccountImagesViewModel()
+
     //MARK: - View Controller Life Cycle
     
     override func viewDidLoad() {
@@ -24,27 +25,28 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.backgroundColor = .white
         // Do any additional setup after loading the view.
-        imgurListViewModel.delegate = self
+        accountImagesViewModel.delegate = self
     }
         
     override func viewDidAppear(_ animated: Bool) {
-        self.callImgurImageListAPI()
+        self.getAccountImages()
     }
     
 }
 
-//MARK: - ImageListProtocol
 
-extension ViewController: ImageListProtocol {
-    
-    func callImgurImageListAPI() {
-        imgurListViewModel.callImgurImageListAPI()
+//MARK: - AccountImagesProtocol
+
+extension ViewController: AccountImagesProtocol {
+        
+    func getAccountImages() {
+        accountImagesViewModel.callImgurAccountImagesAPI()
     }
     
-    func returnData(imgurImageListData : ImageListModel?) {
+    func returnData(accountImagesData : AccountImagesModel?) {
         // Hide the user’s age.
-        imgurListViewModel.imgurImageListData = imgurImageListData
-        Logger().info("Images: \(imgurImageListData.debugDescription, privacy: .private)")
+        accountImagesViewModel.accountImagesModel = accountImagesData
+        Logger().info("Images: \(self.accountImagesViewModel.accountImagesModel.debugDescription, privacy: .private)")
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -59,7 +61,7 @@ extension ViewController: ImageListProtocol {
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let modelData = imgurListViewModel.imgurImageListData?.data else {
+        guard let modelData = accountImagesViewModel.accountImagesModel?.data else {
             return 0
         }
         return modelData.count
@@ -70,7 +72,7 @@ extension ViewController: UITableViewDataSource {
         //get cell type
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.backgroundColor = .white
-        cell.textLabel?.text = imgurListViewModel.imgurImageListData?.data[indexPath.row].link
+        cell.textLabel?.text = accountImagesViewModel.accountImagesModel?.data[indexPath.row].title
         cell.textLabel?.textColor = .black
 
         return cell

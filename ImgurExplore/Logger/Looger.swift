@@ -11,5 +11,5 @@ import OSLog
 extension Logger {
     private static let appIdentifier = Bundle.main.bundleIdentifier ?? ""
     static let main = Logger(subsystem: appIdentifier, category: "main")
-    static let imageList = Logger(subsystem: appIdentifier, category: "image")
+    static let imageList = Logger(subsystem: appIdentifier, category: "images")
 }
