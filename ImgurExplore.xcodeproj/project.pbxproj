@@ -12,7 +12,6 @@
 		B5109EC22B4502F100F65326 /* AccountImages.json in Resources */ = {isa = PBXBuildFile; fileRef = B5109EC02B4502F100F65326 /* AccountImages.json */; };
 		B5109ECC2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109ECB2B450DAA00F65326 /* AccountImagesViewModel.swift */; };
 		B5109ECD2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109ECB2B450DAA00F65326 /* AccountImagesViewModel.swift */; };
-		B5109ECF2B4550FF00F65326 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327F62B441EF900D3F2F8 /* AppConstants.swift */; };
 		B5109ED22B45533B00F65326 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109ED12B45533B00F65326 /* Dependencies.swift */; };
 		B5109EE22B45A8C100F65326 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE12B45A8C100F65326 /* DataParser.swift */; };
 		B5109EE42B45A94600F65326 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE32B45A94600F65326 /* EndPointType.swift */; };
@@ -123,7 +122,6 @@
 		B5109ECE2B4550DB00F65326 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				B5F327F62B441EF900D3F2F8 /* AppConstants.swift */,
 				B5109EE12B45A8C100F65326 /* DataParser.swift */,
 				B5109EE32B45A94600F65326 /* EndPointType.swift */,
 				B5109EE52B45A9CF00F65326 /* HttpService.swift */,
@@ -169,6 +167,7 @@
 			children = (
 				B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */,
 				B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */,
+				B5F327F62B441EF900D3F2F8 /* AppConstants.swift */,
 				B5109ED02B4552D200F65326 /* Dependencies */,
 				B5109ECE2B4550DB00F65326 /* Service */,
 				B5F327F52B441E9A00D3F2F8 /* Model */,
@@ -395,7 +394,6 @@
 			files = (
 				B5F327D52B441D8700D3F2F8 /* ImgurExploreTests.swift in Sources */,
 				B5109ECD2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */,
-				B5109ECF2B4550FF00F65326 /* AppConstants.swift in Sources */,
 				B5F327FF2B446C7000D3F2F8 /* Looger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
