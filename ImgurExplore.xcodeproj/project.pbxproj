@@ -10,11 +10,19 @@
 		B5109EBE2B4501A700F65326 /* AccountImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EBD2B4501A700F65326 /* AccountImagesModel.swift */; };
 		B5109EC12B4502F100F65326 /* AccountImages.json in Resources */ = {isa = PBXBuildFile; fileRef = B5109EC02B4502F100F65326 /* AccountImages.json */; };
 		B5109EC22B4502F100F65326 /* AccountImages.json in Resources */ = {isa = PBXBuildFile; fileRef = B5109EC02B4502F100F65326 /* AccountImages.json */; };
-		B5109EC72B45078400F65326 /* ModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EC62B45078400F65326 /* ModelHelper.swift */; };
-		B5109EC92B450CE100F65326 /* AccountImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EC82B450CE000F65326 /* AccountImagesService.swift */; };
-		B5109ECA2B450CE100F65326 /* AccountImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EC82B450CE000F65326 /* AccountImagesService.swift */; };
 		B5109ECC2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109ECB2B450DAA00F65326 /* AccountImagesViewModel.swift */; };
 		B5109ECD2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109ECB2B450DAA00F65326 /* AccountImagesViewModel.swift */; };
+		B5109ECF2B4550FF00F65326 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327F62B441EF900D3F2F8 /* AppConstants.swift */; };
+		B5109ED22B45533B00F65326 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109ED12B45533B00F65326 /* Dependencies.swift */; };
+		B5109EE22B45A8C100F65326 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE12B45A8C100F65326 /* DataParser.swift */; };
+		B5109EE42B45A94600F65326 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE32B45A94600F65326 /* EndPointType.swift */; };
+		B5109EE62B45A9CF00F65326 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE52B45A9CF00F65326 /* HttpService.swift */; };
+		B5109EE82B45AA4100F65326 /* ImgurAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE72B45AA4100F65326 /* ImgurAPIEndPoint.swift */; };
+		B5109EEA2B45AA8000F65326 /* ImgurImagesDataHttpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EE92B45AA8000F65326 /* ImgurImagesDataHttpServiceImpl.swift */; };
+		B5109EEC2B45AABB00F65326 /* JsonDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EEB2B45AABB00F65326 /* JsonDataParser.swift */; };
+		B5109EEE2B45AAD700F65326 /* HttpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EED2B45AAD700F65326 /* HttpServiceImpl.swift */; };
+		B5109EF02B45AAF300F65326 /* ImgurImagesDataHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */; };
+		B5109EF22B45AC0900F65326 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5109EF12B45AC0900F65326 /* ViewExtension.swift */; };
 		B5F327BE2B441D8400D3F2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */; };
 		B5F327C02B441D8400D3F2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */; };
 		B5F327C22B441D8400D3F2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327C12B441D8400D3F2F8 /* ViewController.swift */; };
@@ -24,7 +32,7 @@
 		B5F327D52B441D8700D3F2F8 /* ImgurExploreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327D42B441D8700D3F2F8 /* ImgurExploreTests.swift */; };
 		B5F327DF2B441D8700D3F2F8 /* ImgurExploreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327DE2B441D8700D3F2F8 /* ImgurExploreUITests.swift */; };
 		B5F327E12B441D8700D3F2F8 /* ImgurExploreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327E02B441D8700D3F2F8 /* ImgurExploreUITestsLaunchTests.swift */; };
-		B5F327F72B441EF900D3F2F8 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327F62B441EF900D3F2F8 /* AppKeys.swift */; };
+		B5F327F72B441EF900D3F2F8 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327F62B441EF900D3F2F8 /* AppConstants.swift */; };
 		B5F327FE2B446C7000D3F2F8 /* Looger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327FD2B446C7000D3F2F8 /* Looger.swift */; };
 		B5F327FF2B446C7000D3F2F8 /* Looger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F327FD2B446C7000D3F2F8 /* Looger.swift */; };
 /* End PBXBuildFile section */
@@ -49,9 +57,17 @@
 /* Begin PBXFileReference section */
 		B5109EBD2B4501A700F65326 /* AccountImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImagesModel.swift; sourceTree = "<group>"; };
 		B5109EC02B4502F100F65326 /* AccountImages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AccountImages.json; sourceTree = "<group>"; };
-		B5109EC62B45078400F65326 /* ModelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelper.swift; sourceTree = "<group>"; };
-		B5109EC82B450CE000F65326 /* AccountImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImagesService.swift; sourceTree = "<group>"; };
 		B5109ECB2B450DAA00F65326 /* AccountImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImagesViewModel.swift; sourceTree = "<group>"; };
+		B5109ED12B45533B00F65326 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		B5109EE12B45A8C100F65326 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		B5109EE32B45A94600F65326 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		B5109EE52B45A9CF00F65326 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		B5109EE72B45AA4100F65326 /* ImgurAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurAPIEndPoint.swift; sourceTree = "<group>"; };
+		B5109EE92B45AA8000F65326 /* ImgurImagesDataHttpServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImagesDataHttpServiceImpl.swift; sourceTree = "<group>"; };
+		B5109EEB2B45AABB00F65326 /* JsonDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParser.swift; sourceTree = "<group>"; };
+		B5109EED2B45AAD700F65326 /* HttpServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceImpl.swift; sourceTree = "<group>"; };
+		B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImagesDataHttpService.swift; sourceTree = "<group>"; };
+		B5109EF12B45AC0900F65326 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		B5F327BA2B441D8400D3F2F8 /* ImgurExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +81,7 @@
 		B5F327DA2B441D8700D3F2F8 /* ImgurExploreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgurExploreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F327DE2B441D8700D3F2F8 /* ImgurExploreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurExploreUITests.swift; sourceTree = "<group>"; };
 		B5F327E02B441D8700D3F2F8 /* ImgurExploreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurExploreUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B5F327F62B441EF900D3F2F8 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		B5F327F62B441EF900D3F2F8 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		B5F327FD2B446C7000D3F2F8 /* Looger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Looger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +118,30 @@
 			path = MockJSONs;
 			sourceTree = "<group>";
 		};
+		B5109ECE2B4550DB00F65326 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B5F327F62B441EF900D3F2F8 /* AppConstants.swift */,
+				B5109EE12B45A8C100F65326 /* DataParser.swift */,
+				B5109EE32B45A94600F65326 /* EndPointType.swift */,
+				B5109EE52B45A9CF00F65326 /* HttpService.swift */,
+				B5109EE72B45AA4100F65326 /* ImgurAPIEndPoint.swift */,
+				B5109EE92B45AA8000F65326 /* ImgurImagesDataHttpServiceImpl.swift */,
+				B5109EEB2B45AABB00F65326 /* JsonDataParser.swift */,
+				B5109EED2B45AAD700F65326 /* HttpServiceImpl.swift */,
+				B5109EEF2B45AAF300F65326 /* ImgurImagesDataHttpService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B5109ED02B4552D200F65326 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B5109ED12B45533B00F65326 /* Dependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		B5F327B12B441D8400D3F2F8 = {
 			isa = PBXGroup;
 			children = (
@@ -127,11 +167,13 @@
 			children = (
 				B5F327BD2B441D8400D3F2F8 /* AppDelegate.swift */,
 				B5F327BF2B441D8400D3F2F8 /* SceneDelegate.swift */,
+				B5109ED02B4552D200F65326 /* Dependencies */,
+				B5109ECE2B4550DB00F65326 /* Service */,
+				B5F327F52B441E9A00D3F2F8 /* Model */,
+				B5F327ED2B441E3C00D3F2F8 /* View */,
+				B5F327F42B441E8A00D3F2F8 /* ViewModel */,
 				B5109EBF2B4502D700F65326 /* MockJSONs */,
 				B5F327FC2B446C5F00D3F2F8 /* Logger */,
-				B5F327F52B441E9A00D3F2F8 /* Model */,
-				B5F327F42B441E8A00D3F2F8 /* ViewModel */,
-				B5F327ED2B441E3C00D3F2F8 /* View */,
 				B5F327C32B441D8400D3F2F8 /* Main.storyboard */,
 				B5F327C62B441D8700D3F2F8 /* Assets.xcassets */,
 				B5F327C82B441D8700D3F2F8 /* LaunchScreen.storyboard */,
@@ -161,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F327C12B441D8400D3F2F8 /* ViewController.swift */,
+				B5109EF12B45AC0900F65326 /* ViewExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,10 +219,7 @@
 		B5F327F52B441E9A00D3F2F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B5F327F62B441EF900D3F2F8 /* AppKeys.swift */,
-				B5109EC62B45078400F65326 /* ModelHelper.swift */,
 				B5109EBD2B4501A700F65326 /* AccountImagesModel.swift */,
-				B5109EC82B450CE000F65326 /* AccountImagesService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,13 +365,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5109ED22B45533B00F65326 /* Dependencies.swift in Sources */,
+				B5109EF02B45AAF300F65326 /* ImgurImagesDataHttpService.swift in Sources */,
 				B5F327C22B441D8400D3F2F8 /* ViewController.swift in Sources */,
-				B5109EC72B45078400F65326 /* ModelHelper.swift in Sources */,
+				B5109EEC2B45AABB00F65326 /* JsonDataParser.swift in Sources */,
+				B5109EE22B45A8C100F65326 /* DataParser.swift in Sources */,
+				B5109EE82B45AA4100F65326 /* ImgurAPIEndPoint.swift in Sources */,
 				B5109EBE2B4501A700F65326 /* AccountImagesModel.swift in Sources */,
+				B5109EEE2B45AAD700F65326 /* HttpServiceImpl.swift in Sources */,
+				B5109EE62B45A9CF00F65326 /* HttpService.swift in Sources */,
 				B5F327BE2B441D8400D3F2F8 /* AppDelegate.swift in Sources */,
-				B5F327F72B441EF900D3F2F8 /* AppKeys.swift in Sources */,
-				B5109EC92B450CE100F65326 /* AccountImagesService.swift in Sources */,
+				B5109EEA2B45AA8000F65326 /* ImgurImagesDataHttpServiceImpl.swift in Sources */,
+				B5F327F72B441EF900D3F2F8 /* AppConstants.swift in Sources */,
+				B5109EE42B45A94600F65326 /* EndPointType.swift in Sources */,
 				B5F327C02B441D8400D3F2F8 /* SceneDelegate.swift in Sources */,
+				B5109EF22B45AC0900F65326 /* ViewExtension.swift in Sources */,
 				B5109ECC2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */,
 				B5F327FE2B446C7000D3F2F8 /* Looger.swift in Sources */,
 			);
@@ -343,7 +391,7 @@
 			files = (
 				B5F327D52B441D8700D3F2F8 /* ImgurExploreTests.swift in Sources */,
 				B5109ECD2B450DAA00F65326 /* AccountImagesViewModel.swift in Sources */,
-				B5109ECA2B450CE100F65326 /* AccountImagesService.swift in Sources */,
+				B5109ECF2B4550FF00F65326 /* AppConstants.swift in Sources */,
 				B5F327FF2B446C7000D3F2F8 /* Looger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

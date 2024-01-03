@@ -7,28 +7,27 @@
 
 import Foundation
 
-protocol AccountImagesProtocol: AnyObject {
-    func returnData(accountImagesData : AccountImagesModel?)
-    func returnError(error : UserError?)
-    func getAccountImages()
-}
 
 final class AccountImagesViewModel {
     
-    private(set) var userError: UserError?
-    var accountImagesModel : AccountImagesModel?
-    weak var delegate : AccountImagesProtocol!
+    private var service: ImgurImagesDataHttpService
+    private(set) var accountImagesModel : AccountImagesModel?
     
-    func callImgurAccountImagesAPI() {
-        Task {
-            do {
-                accountImagesModel = try await AccountImagesService.getAccountImagesData()
-                self.delegate?.returnData(accountImagesData: accountImagesModel)
-            } catch (let error) {
-                let userError = UserError.custom(error: error)
-                self.delegate.returnError(error: userError)
-            }
-        }
+    init(service: ImgurImagesDataHttpService) {
+        self.service = service
+    }
+    
+    func getImgurAccountImagesData() async -> AccountImagesModel? {
+        self.accountImagesModel = await self.service.getData()
+        return self.accountImagesModel
+    }
+    
+    func getImagesCount() -> Int {
+        return self.accountImagesModel?.data.count ?? 0
+    }
+    
+    func getImages() -> [AccountImagesData] {
+        return self.accountImagesModel?.data ?? []
     }
     
 }
