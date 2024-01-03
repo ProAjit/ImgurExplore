@@ -33,6 +33,6 @@ extension ImgurAPIEndPoint: EndPointType {
     }
 
     var headers: [String: String]? {
-        return ["Content-Type": "application/json", "Authorization": AppConstants.access_Token]
+        return ["Content-Type": "application/json", "Authorization": AppConstants.accessToken]
     }
 }
