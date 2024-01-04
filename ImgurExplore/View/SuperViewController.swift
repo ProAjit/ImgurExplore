@@ -29,6 +29,7 @@ extension SuperViewController {
 
   func LoadingStop(){
       loadingIndicator?.stopAnimating()
+      loadingIndicator?.removeFromSuperview()
   }
     
 }
