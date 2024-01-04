@@ -17,7 +17,9 @@ So, in this demo, I make a use of the account/me API:
 This API will also give all images of user, just search functionality is not available.
  
 All three branches are working means API integration is completed, but network architecture and UI-Data binding is partly completed.
+
 In 'clean_architecture' and 'main' branch code is same and it follows clean architecture principle, with 75% coverage.
+
 In 'basic' branch MVVM architecture is followed with 60% coverage.
 
  
