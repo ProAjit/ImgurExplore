@@ -18,9 +18,9 @@ This API will also give all images of user, just search functionality is not ava
  
 All three branches are working means API integration is completed, but network architecture and UI-Data binding is partly completed.
 
-In 'clean_architecture' and 'main' branch code is same and it follows clean architecture principle, with 75% coverage.
+In 'clean_architecture' and 'main' branch code is same and it follows clean architecture principle, with 75% completion.
 
-In 'basic' branch MVVM architecture is followed with 60% coverage.
+In 'basic' branch MVVM architecture is followed with 60% completion.
 
  
 
